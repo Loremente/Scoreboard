@@ -28,7 +28,7 @@ public final class Main extends JavaPlugin implements Listener {
 
         Objective obj = board.registerNewObjective("testboard","dummy");
         obj.setDisplaySlot(DisplaySlot.SIDEBAR);
-        obj.setDisplayName("testboard");
+        obj.setDisplayName(ChatColor.GREEN + "Scoreboard");
 
         Score website = obj.getScore(ChatColor.YELLOW + "www.stocazzo.com");
         website.setScore(1);
@@ -36,7 +36,7 @@ public final class Main extends JavaPlugin implements Listener {
         Score space = obj.getScore("");
         space.setScore(2);
 
-        Score name = obj.getScore(ChatColor.BLUE + "Name:" + player.getName());
+        Score name = obj.getScore(ChatColor.BLUE + "Name: " + player.getName());
         name.setScore(3);
 
         player.setScoreboard(board);
