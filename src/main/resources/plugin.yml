@@ -1,0 +1,4 @@
+name: Scoreboard
+version: '1.0'
+main: me.loremente.scoreboard.Main
+api-version: 1.18
