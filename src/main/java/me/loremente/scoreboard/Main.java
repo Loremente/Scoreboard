@@ -33,7 +33,11 @@ public final class Main extends JavaPlugin implements Listener {
         Score space = obj.getScore("");
         space.setScore(2);
 
-        Team blocksBroken = board.registerNewTeam("");
+        Team blocksBroken = board.registerNewTeam("blocchirotti");
+        blocksBroken.addEntry(ChatColor.BOLD.toString());
+        blocksBroken.setPrefix(ChatColor.BLUE + "Blocchi rotti: " );
+        blocksBroken.setSuffix(ChatColor.YELLOW + "0");
+        obj.getScore(ChatColor.BOLD.toString()).setScore(3);
 
         player.setScoreboard(board);
 
