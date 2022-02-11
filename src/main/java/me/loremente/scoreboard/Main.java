@@ -7,10 +7,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.scoreboard.DisplaySlot;
-import org.bukkit.scoreboard.Objective;
-import org.bukkit.scoreboard.Score;
-import org.bukkit.scoreboard.Scoreboard;
+import org.bukkit.scoreboard.*;
 
 public final class Main extends JavaPlugin implements Listener {
 
@@ -36,8 +33,7 @@ public final class Main extends JavaPlugin implements Listener {
         Score space = obj.getScore("");
         space.setScore(2);
 
-        Score name = obj.getScore(ChatColor.BLUE + "Name: " + player.getName());
-        name.setScore(3);
+        Team blocksBroken = board.registerNewTeam("");
 
         player.setScoreboard(board);
 
