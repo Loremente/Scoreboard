@@ -30,7 +30,7 @@ public final class Main extends JavaPlugin implements Listener {
         obj.setDisplaySlot(DisplaySlot.SIDEBAR);
         obj.setDisplayName(ChatColor.GREEN + "Scoreboard");
 
-        Score website = obj.getScore(ChatColor.YELLOW + "www.stocazzo.com");
+        Score website = obj.getScore(ChatColor.YELLOW + "www.example.com");
         website.setScore(1);
 
         Score space = obj.getScore("");
